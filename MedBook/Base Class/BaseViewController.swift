@@ -25,6 +25,7 @@ class BaseViewController: UIViewController {
         self.navigationItem.setHidesBackButton(true, animated: true)
     }
     
+    /// Method to set leftnavigationbar button into navigation bar
     func addnavigationLeftBarButton() {
         let sideBarImage = UIImage(systemName: "chevron.backward")
         let leftBarButton = UIBarButtonItem(image: sideBarImage, style:.plain, target: self, action: #selector(backButton))
@@ -37,6 +38,7 @@ class BaseViewController: UIViewController {
     }
     
     
+    /// Method to dark gray curve view to viewcontroller
     func addCurveView() {
         let curveLayer = CAShapeLayer()
         self.view.layer.insertSublayer(curveLayer, at: 0)

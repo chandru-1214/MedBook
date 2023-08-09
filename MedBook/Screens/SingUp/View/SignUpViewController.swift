@@ -17,8 +17,9 @@ class SignUpViewController: BaseViewController {
     @IBOutlet weak var characterNumberCheckBox: UIImageView!
     @IBOutlet weak var specialCharacterCheckBox: UIImageView!
     @IBOutlet weak var uppercaseCharacterCheckBox: UIImageView!
-    
     @IBOutlet weak var signUpButton: UIButton!
+    
+    //MARK: - Variables
     var signUpViewModel: SignUpViewModel?
     var isValidPassword = false
     

@@ -47,6 +47,7 @@ extension SignUpViewController: UITextFieldDelegate {
         if textField == passwordTextField {
             if let text = textField.text,
                text != "" {
+                //check all password conditions are satisfied or not
                 let passwordResult = Utils.checkPassword(text: text)
                 
                 checkOrUncheckImageView(uppercaseCharacterCheckBox, isChecked: passwordResult.isContainUppercase)
@@ -74,7 +75,7 @@ extension SignUpViewController: UITextFieldDelegate {
         imageView.image = UIImage(named: isChecked ? "checkbox_icon" : "uncheckbox_icon")!
     }
     
-    /// Method check the inupts are valid or not
+    /// Method to check the inupts are valid or not
     /// - Returns: Return true if it is valid
     func validateInputs() -> Bool {
         if let emailText = emailTextField.text,

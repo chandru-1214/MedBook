@@ -9,6 +9,7 @@ import UIKit
 
 class HomeViewController: BaseViewController {
     
+    
     var homeViewModel: HomeViewModel?
 
     override func viewDidLoad() {
@@ -16,6 +17,7 @@ class HomeViewController: BaseViewController {
         homeViewModel = HomeViewModel()
         hideNavigationBar()
     }
+    
     @IBAction func actionOnLogoutButton(_ sender: Any) {
         homeViewModel?.logoutUser()
         UIUtils.showIntialViewController()

@@ -10,6 +10,7 @@ import UIKit
 
 class UIUtils {
     
+    /// Method to set intial viewcontroller based on user logging state
     static func showIntialViewController() {
         let appDelegate = UIApplication.shared.delegate as! AppDelegate
         

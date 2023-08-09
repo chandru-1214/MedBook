@@ -9,12 +9,14 @@ import UIKit
 
 class LoginViewController: BaseViewController {
 
+    //MARK: - IBOutlets
     @IBOutlet weak var signUpButton: UIButton!
     @IBOutlet weak var signUpButtonView: UIView!
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     
     var loginViewModel: LoginViewModel?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         loginViewModel = LoginViewModel()
@@ -48,6 +50,7 @@ class LoginViewController: BaseViewController {
         })
     }
     
+    /// Method to navigate home screen
     func navigateToHomeScreen() {
         let signUpVC = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "HomeViewController") as! HomeViewController
         navigationController?.pushViewController(signUpVC, animated: true)

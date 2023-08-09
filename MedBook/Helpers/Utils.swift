@@ -30,6 +30,7 @@ class Utils {
     }
     
     
+    /// Method to clear logged user details
     static func clearAllUserData() {
         MedBookUserDefaults.shared.isUserLoggedIn = false
         MedBookUserDefaults.shared.myEmail = ""
