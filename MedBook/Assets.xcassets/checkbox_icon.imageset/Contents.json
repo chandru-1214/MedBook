@@ -1,0 +1,23 @@
+{
+  "images" : [
+    {
+      "filename" : "check-mark-logo-checkbox-x-mark-button-dialog-box-line-symbol-blackandwhite-png-clipart-thumbnail.jpg",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "filename" : "check-mark-logo-checkbox-x-mark-button-dialog-box-line-symbol-blackandwhite-png-clipart-thumbnail@2x.jpg",
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "filename" : "check-mark-logo-checkbox-x-mark-button-dialog-box-line-symbol-blackandwhite-png-clipart-thumbnail@3x.jpg",
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}
